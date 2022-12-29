@@ -47,10 +47,16 @@ body {
   gap: 50px;
 }
 
-.logo, .sidebar li {
-  display: flex;
+.logo, .sidebar a {
+  display: grid;
+  grid-template: max-content / repeat(2, max-content);
   place-items: center;
-  gap: 10px;
+  gap: 15px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .logo {
