@@ -177,7 +177,7 @@ body {
   background-color: var(--grey-background, grey);
   display: grid;
   grid-template: repeat(2, 1fr) / 1fr 300px;
-  padding: 15px 0;
+  padding: 15px;
 }
 
 .content-section {
@@ -200,13 +200,17 @@ body {
   gap: 20px;
 }
 
-.projects .card {
+.section-card {
   background-color: var(--light, white);
   border-radius: 7px;
   box-shadow: 2px 2px 5px rgb(0,0,0,0.25);
+  padding: 20px;
+  display: grid;
+}
+
+.projects .card {
   padding: 25px 20px;
   height: 200px;
-  display: grid;
   grid-template: max-content 1fr max-content / 1fr;
 }
 
@@ -233,4 +237,23 @@ body {
   border: none;
   color: #424242;
   cursor: pointer;
+}
+
+.announcements {
+  font-size: 0.75rem;
+  grid-template-rows: repeat(3, 60px);
+  gap: 24px;
+}
+
+.announcements .announcement {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.announcements h1 {
+  font-size: 0.85rem;
+}
+
+.announcements p {
+  color: var(--grey-foreground);
 }
