@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -122,7 +123,17 @@
           <button>Share</button>
         </div>
       </div>
-      <div class="content"></div>
+      <div class="content">
+        <div class="content-section" style="grid-row: 1 / span 2"><span class="title">Your projects</span>
+          <div class="projects"></div>
+        </div>
+        <div class="content-section"><span class="title">Announcements</span>
+          <div class="announcements"></div>
+        </div>
+        <div class="content-section"><span class="title">Trending</span>
+          <div class="trending"></div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
